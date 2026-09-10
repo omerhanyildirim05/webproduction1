@@ -1,0 +1,48 @@
+!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Page Title
+</title>
+
+</head>
+
+
+<body>
+<h1>Laura Splan</h1>
+<h2>Hunter College</h2>
+<h3>Major: Film and Media</h3>
+<h4>Web Production I FALL 2026</h4>
+
+<hr>
+&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;
+<hr>
+
+<h2>BIOGRAPHY</h2>
+<p>My first paragraph.</p>
+<p>My second paragraph.</p>
+
+<hr>
+&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;
+<hr>
+
+<h2>FAVORITE SITES</h2>
+<p><a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
+<p><a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+<p><a href="https://www.laurasplan.com" target="_blank">Portfolio</a></p>
+
+<hr>
+&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;
+<hr>
+
+&copy; 2026 Laura Splan<br>
+All Rights Reserved
+
+
+</body>
+
+
+</html>
