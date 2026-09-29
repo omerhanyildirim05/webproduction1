@@ -1,0 +1,87 @@
+body {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 40px;
+}
+
+/* Main headings */
+
+h1 {
+    font-family: "Kumar One Outline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #00FF00;
+    font-size: 36px;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #050505;
+    border: 1px solid #00FF00;
+    padding: 15px;
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+/* Artist name */
+
+h2 {
+    color: #00CC00;
+    font-size: 20px;
+}
+
+/* Project title */
+
+h3 {
+    font-size: 24px;
+}
+
+/* Project links */
+
+h3 a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: #FFFFFF;
+}
+
+/* Year */
+
+h4 {
+    color: #009900;
+    font-size: 14px;
+}
+
+/* Paragraph text */
+
+p {
+    color: #00DD00;
+    line-height: 1.6;
+}
+
+/* Horizontal lines */
+
+hr {
+    border: 0;
+    border-top: 1px solid #00FF00;
+}
