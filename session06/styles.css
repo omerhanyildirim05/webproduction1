@@ -1,0 +1,312 @@
+body {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Share Tech Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 40px;
+}
+
+/* Main headings */
+
+h1 {
+    font-family: "Kumar One Outline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #00FF00;
+    font-size: 36px;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #050505;
+    border: 2px solid #00FF00;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0  12px #00FF00
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 12px #00FF00;
+}
+
+/* Artist name */
+
+h2 {
+    color: #00CC00;
+    font-size: 20px;
+}
+
+/* Project title */
+
+h3 {
+    font-size: 24px;
+}
+
+/* Project links */
+
+h3 a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: #FFFFFF;
+}
+
+/* Year */
+
+h4 {
+    color: #009900;
+    font-size: 14px;
+}
+
+/* Paragraph text */
+
+p {
+    color: #00CC00;
+    line-height: 1.6;
+}
+
+/* Horizontal lines */
+
+hr {
+    border: 0;
+    border-top: 1px solid #009900;
+}
+
+img {
+  border: 2px solid #00FF00;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px #00FF00;
+}
+
+
+/* Session 06: Layout and Positioning */
+
+/* Main container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #050505;
+    padding: 15px;
+    border-bottom: 1px solid #00FF00;
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #00FF00;
+    background-color: #050505;
+    border: 1px solid #00FF00;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+/* Main content */
+main {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    background-color: #080808;
+    position: relative;
+}
+
+/* Floating images */
+main div.description img.thumbnail {
+    width: 120px;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+/* Description sections */
+main div.description {
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+/* Absolute positioning */
+div.buttonAbsolute {
+    background-color: #00FF00;
+    color: #000000;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 15px;
+    z-index: 4;
+}
+
+/* Second absolute button */
+div.buttonAbsolute2 {
+    background-color: #009900;
+    color: #FFFFFF;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    z-index: 3;
+}
+
+/* Relative positioning */
+div.buttonRelative {
+    background-color: #050505;
+    color: #00FF00;
+    position: relative;
+    left: 15px;
+    width: 170px;
+    padding: 15px;
+    border: 1px solid #00FF00;
+}
+
+/* Sidebar */
+aside {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    background-color: #050505;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    padding: 15px;
+    background-color: #050505;
+    border-top: 1px solid #00FF00;
+}
+
+/* Gaming-style headings */
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+}
+
+
+/* Remove default link colors */
+.site-box {
+    display: block;
+    color: #00FF00;
+    text-decoration: none;
+    background-color: #050505;
+    border: 1px solid #00FF00;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 6px #00FF00;
+    transition: 0.2s ease;
+}
+
+.site-box h3 {
+    color: #00FF00;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.site-box p {
+    color: #00CC00;
+    text-decoration: none;
+}
+
+/* interactive hover effect */
+.site-box:hover {
+    background-color: #102010;
+    box-shadow: 0 0 16px #00FF00;
+    transform: translateY(-3px);
+}
+
+/* two-column layout */
+.site-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+/* keyboard focus */
+.site-box:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+
+/* ===== DIGITAL CODE BACKGROUND ===== */
+
+body {
+    background-color: #000000;
+    position: relative;
+}
+
+/* Faint programming text behind the website */
+body::before {
+    content:
+        "01010101  0x00FF  const system = online;  \A"
+        "funny line code \A"
+        "function exploreDigitalWorld() {  \A"
+        "    return new Experience();  \A"
+        "} // ACCESS GRANTED  \A"
+        "01001010  <html>  </html>  0xFF  \A"
+        "while (internet.isAlive) { create(); }  \A"
+        "let creativity = true;  \A"
+        "01010110  // DIGITAL UNDERGROUND  \A"
+        "import { imagination } from 'future';  \A"
+        "01001001  SYSTEM_READY  0x01  \A"
+        "console.log('Welcome to Green Zone');";
+
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: pre;
+    overflow-wrap: anywhere;
+    color: #00FF00;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 16px;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    opacity: 0.13;
+    text-shadow: 0 0 5px #00FF00;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(5, 5, 5, 0.88);
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: rgba(5, 5, 5, 0.82);
+}
