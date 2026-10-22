@@ -1,0 +1,138 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /*  set max width of .container but display body as flex and center it's contents */
+  justify-content: center;
+  /*  this centers the contents of the body like .container */
+  background-color: #101820;
+  background-image: url("images/background.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/* Add padding to all of the .container child elements */
+.container>* {
+  padding: 20px;
+}
+
+.container {
+  color: #ECDBBA;
+  display: flex;
+  /* use flex box */
+  flex-wrap: wrap;
+  /* wrap */
+  max-width: 1000px;
+}
+
+header {
+  background: #0A246A;
+  flex: 1 0 100%;
+  color: #FFFFFF;
+  /* grow on, shrink off, span width of browser */
+  order: 1;
+  /* display order regardless of html structure */
+
+  /* POSITION STICKY */
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+}
+
+main {
+  background: #FFFFFF;
+  flex: 1 1 500px;
+  color: #000000;
+  order: 3;
+}
+
+nav {
+  background: #ECE9D8;
+  flex: 1 0 100px;
+  /* grow but do not shrink less than basis */
+  order: 2;
+  color: #000000:
+}
+
+nav a{
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: #C0C0C0;
+  color: #000000;
+}
+
+nav h2{
+  color: #000000;
+}
+
+nav ul, nav li{
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li{
+  list-style-type: none;
+      margin: 10px 0px;
+      background-color: #fff
+      padding: 4px
+      max-width: 150px
+
+}
+
+aside {
+  background: #D6DFF7;
+  flex: 1 0 200px;
+  /* grow but do not shrink less than basis */
+  order: 4;
+  color: #000000;
+}
+
+footer {
+  background: #316AC5;
+  flex: 1 0 100%;
+  /* grow on, shrink off, span width of browser */
+  order: 5;
+  color: #FFFFFF;
+}
+
+.game-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
