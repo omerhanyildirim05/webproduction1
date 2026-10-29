@@ -1,0 +1,162 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: skyblue;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+}
+
+main {
+  background: slategray;
+  /* span 6 cols */
+  grid-column: 4 / 10;
+}
+
+nav {
+  background: cadetblue;
+  /* span 3 cols */
+  grid-column: 1 / 4;
+}
+
+aside {
+  background: seagreen;
+  /* span 3 cols */
+  grid-column: 10 / 13;
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+/* 12-column experiment */
+/* 12-column block */
+div.col-12 {
+  background-color: #e63946;
+  border: solid #000 2px;
+  grid-column: 1 / 13;
+}
+
+/* Two halves */
+div.col-6l {
+  background-color: #457bdb;
+  border: solid #000 2px;
+  grid-column: 1 / 7;
+}
+
+div.col-6r {
+  background-color: #f1c40f;
+  border: solid #000 2px;
+  grid-column: 7 / 13;
+}
+
+/* Three blocks of 4 columns */
+div.col-4 {
+  background-color: #2a9d8f;
+  border: solid #000 2px;
+  grid-column: 1 / 5;
+}
+
+div.col-4b {
+  background-color: #9b5de5;
+  border: solid #000 2px;
+  grid-column: 5 / 9;
+}
+
+div.col-4c {
+  background-color: #f4a261;
+  border: solid #000 2px;
+  grid-column: 9 / 13;
+}
+
+/* 5 + 2 + 5 columns */
+div.col-5 {
+  background-color: #e76f51;
+  border: solid #000 2px;
+  grid-column: 1 / 6;
+}
+
+div.col-2 {
+  background-color: #a8dadc;
+  border: solid #000 2px;
+  grid-column: 6 / 8;
+}
+
+div.col-5b {
+  background-color: #6a994e;
+  border: solid #000 2px;
+  grid-column: 8 / 13;
+}
+
+/* 1 + 2 + 4 + 5 columns */
+div.col-1 {
+  background-color: #ff99c8;
+  border: solid #000 2px;
+  grid-column: 1 / 2;
+}
+
+div.col-2b {
+  background-color: #caffbf;
+  border: solid #000 2px;
+  grid-column: 2 / 4;
+}
+
+div.col-4d {
+  background-color: #fdffb6;
+  border: solid #000 2px;
+  grid-column: 4 / 8;
+}
+
+div.col-5c {
+  background-color: #bdb2ff;
+  border: solid #000 2px;
+  grid-column: 8 / 13;
+}
+
+footer {
+  background: darkslateblue;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+}
