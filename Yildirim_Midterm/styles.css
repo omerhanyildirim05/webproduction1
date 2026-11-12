@@ -1,0 +1,300 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+/* STYLING */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image:
+    linear-gradient(rgba(5, 5, 16, 0.55), rgba(5, 5, 16, 0.75)),
+    url("nebulae.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  color: #F2F0FF;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 16px;
+  margin: 0;
+}
+
+.wrapper{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*  HEADER */
+
+header{
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header  h1{
+  font-family:"Orbitron", sans-serif;
+  font-size: 42px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #7047B8;
+}
+
+header p{
+  color: #42C8E8;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+/* NAVIGATION */
+
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px;
+  background-color: #111B35BF;
+  border: 1px solid #263451;
+  border-radius: 8px;
+}
+
+nav a{
+  color: #F2F0FF;
+  text-decoration: none;
+  font-family: "Orbitron", sans-sans-serif;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+nav a:hover{
+  color: #42C8E8
+}
+
+/* MAIN */
+
+main{
+  padding: 40px 0;
+  flex: 1;
+}
+
+.hero{
+  text-align: center;
+  padding: 100px 30px;
+  margin-bottom: 40px;
+  background-color: #111B35BF;
+  );
+  border: 1px solid #263451;
+  border-radius: 12px;
+}
+
+.hero h2{
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  color: #42C8E8;
+  letter-spacing: 3px;
+}
+
+.hero p{
+  max-width: 750px;
+  margin: 20px auto;
+  line-height: 1.8;
+  color: #C5C5E8
+}
+
+/* EXPLORE */
+
+.explore{
+  text-align: center;
+  padding: 30px 0;
+}
+
+.explore h2{
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+/* TOPIC */
+
+.topic-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.topic{
+  flex: 1;
+  min-width: 200px;
+  padding: 30px 20px;
+  background-color: #111B35BF;
+  border: 1px solid #263451;
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.topic:hover{
+  transform: translateY(-8px)
+  border-color: #42C8E8
+}
+
+.topic h3{
+  font-family: "Orbitron", sans-serif;
+  color: #A78BFA
+  font-size: 17px;
+}
+
+.topic p{
+  color: #C5C5E8;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer{
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+  border-top: 1px solid #263451;
+  color: #78849D;
+  font-size: 13px
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen  and (max-width: 700px){
+
+  header h1{
+    font-size: 28px;
+  }
+
+  nav{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .topic-container{
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+}
+
+/* HISTORY BOX */
+.history-box {
+    background-color: #111B35;
+    border: 1px solid #263451;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+
+/* ANIMATION 1*/
+
+.star {
+    width: 80px;
+    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #42C8E8,
+                0 0 40px #7047B8;
+    animation: starGlow 2s infinite alternate;
+}
+
+/* STAR BOX */
+
+.star-box {
+    background-color: #000000;
+    border: 1px solid #263451;
+    border-radius: 12px;
+    min-height: 300px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes starGlow {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 20px #42C8E8;
+    }
+
+    to {
+        transform: scale(1.4);
+        box-shadow: 0 0 50px #42C8E8,
+                    0 0 80px #7047B8;
+    }
+}
+
+
+/* ANIMATION 2*/
+
+.orbit-box {
+    background-color: #000000;
+    border: 1px solid #263451;
+    border-radius: 12px;
+    min-height: 400px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sun {
+    width: 65px;
+    height: 65px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #42C8E8,
+                0 0 50px #7047B8;
+}
+
+.orbit {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #7047B8;
+    border-radius: 50%;
+    position: absolute;
+    animation: planetOrbit 6s linear infinite;
+}
+
+.planet {
+    width: 30px;
+    height: 30px;
+    background-color: #42C8E8;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #42C8E8;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+}
+
+@keyframes planetOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
