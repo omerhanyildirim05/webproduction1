@@ -1,0 +1,80 @@
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #3a241d;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Game selection areas */
+#left-container {
+    left: 0;
+}
+
+#right-container {
+    right: 0;
+}
+
+.container {
+    background-color: #eee;
+    width: 15%;
+    top: 90px;
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Game covers */
+.game-holder {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.game {
+    width: 100%;
+    max-width: 160px;
+    cursor: grab;
+    user-select: none;
+}
+
+/* Bookshelf */
+#bookshelf {
+    width: 65%;
+    max-width: 1000px;
+    height: 68vh;
+    min-height: 360px;
+    margin: 50px auto;
+    background-color: #bd7956;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual shelf compartments */
+.shelf {
+    flex: 1;
+    background-color: #850019;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Games placed on the shelf */
+.shelf .game {
+    height: 90%;
+    width: auto;
+    max-width: 44px;
+    cursor: grab;
+}
